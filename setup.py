@@ -25,7 +25,7 @@ setup(
             sources=['multi_slam/msdp_dpvo/fastba/ba.cpp', 'multi_slam/msdp_dpvo/fastba/ba_cuda.cu', 'multi_slam/msdp_dpvo/fastba/block_e.cu'],
             extra_compile_args={
                 'cxx':  ['-O3'], 
-                'nvcc': ['-O3'
+                'nvcc': ['-O3',
                          '-gencode=arch=compute_60,code=sm_60',
                          '-gencode=arch=compute_61,code=sm_61',
                          '-gencode=arch=compute_70,code=sm_70',
