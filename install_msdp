@@ -1,0 +1,7 @@
+cd thirdparty/Hierarchical-Localization
+python -m pip install -e .
+cd ../..
+
+pip install .
+
+pip install ./Viewerexp
