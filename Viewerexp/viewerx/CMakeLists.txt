@@ -18,6 +18,8 @@ list(APPEND CUDA_NVCC_FLAGS "--generate-code=arch=compute_89,code=[compute_89,sm
 
 string(REPLACE ";" " " CUDA_NVCC_FLAGS "${CUDA_NVCC_FLAGS}")
 
+set(CMAKE_CUDA_FLAGS "${CUDA_NVCC_FLAGS}")
+
 #pybind11_add_module(dpviewerx viewer.cpp viewer_cuda.cu)
 pybind11_add_module(viewerxx viewer.cpp viewer_cuda.cu)
 include_directories(${Pangolin_INCLUDE_DIRS})

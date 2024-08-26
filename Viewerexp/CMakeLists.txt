@@ -26,6 +26,8 @@ list(APPEND CUDA_NVCC_FLAGS "--generate-code=arch=compute_89,code=[compute_89,sm
 
 string(REPLACE ";" " " CUDA_NVCC_FLAGS "${CUDA_NVCC_FLAGS}")
 
+set(CMAKE_CUDA_FLAGS "${CUDA_NVCC_FLAGS}")
+
 # include(FindCUDA/select_compute_arch)
 # CUDA_DETECT_INSTALLED_GPUS(INSTALLED_GPU_CCS_1)
 # string(STRIP "${INSTALLED_GPU_CCS_1}" INSTALLED_GPU_CCS_2)
