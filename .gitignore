@@ -1,2 +1,4 @@
 # ignorer les modeles
 *.pth
+build/
+**/build/
