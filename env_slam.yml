@@ -1,4 +1,4 @@
-name: slam_exp
+name: msdp_exp
 channels:
   - pyg
   - pytorch
