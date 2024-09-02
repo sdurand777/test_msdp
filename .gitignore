@@ -2,3 +2,5 @@
 *.pth
 build/
 **/build/
+# Ignorer le dossier our_predictions/
+our_predictions/
